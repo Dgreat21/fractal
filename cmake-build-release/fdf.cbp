@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="fdf"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/dgreat/Documents/collab/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ft">
+				<Option output="/Users/dgreat/Documents/collab/cmake-build-release/libft.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dgreat/Documents/collab/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/dgreat/Documents/collab/.:libft:/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 ft"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ft/fast">
+				<Option output="/Users/dgreat/Documents/collab/cmake-build-release/libft.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dgreat/Documents/collab/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/dgreat/Documents/collab/.:libft:/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 ft/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/dgreat/Documents/collab/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/dgreat/Documents/collab/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="f">
+				<Option output="/Users/dgreat/Documents/collab/cmake-build-release/f" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dgreat/Documents/collab/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/dgreat/Documents/collab/.:libft:/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 f"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="f/fast">
+				<Option output="/Users/dgreat/Documents/collab/cmake-build-release/f" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dgreat/Documents/collab/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/dgreat/Documents/collab/.:libft:/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 f/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fdf">
+				<Option working_dir="/Users/dgreat/Documents/collab/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 fdf"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/collab/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/dgreat/Documents/collab/debug.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/draw_lines.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/events.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/events_bonus.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/fdf.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/fdf.h">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/handler.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/endl.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/error_notice.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/fract.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/free_str.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_atoi.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_atoi_base.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_bzero.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_fswap.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_isalnum.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_isalpha.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_isascii.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_isdigit.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_isprint.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_iswhitespace.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_itoa.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_itoa_base.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_ldel.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_log.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_lst_clear.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_lstadd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_lstadd_end.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_lstdel.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_lstdelone.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_lstiter.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_lstmap.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_lstnew.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_memalloc.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_memccpy.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_memchr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_memcmp.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_memcpy.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_memdel.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_memmove.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_memset.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_pow_uint.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_putchar.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_putchar_fd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_putendl.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_putendl_fd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_putnbr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_putnbr_base.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_putnbr_fd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_putstr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_putstr_fd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_realloc.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strcat.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strchr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strchr_safe.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strclr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strcmp.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strcpy.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strcpy_safe.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strdel.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strdup.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strdup_safe.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strequ.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_striter.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_striteri.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strjoin.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strlcat.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strlen.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strmap.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strmapi.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strmlen.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strncat.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strncmp.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strncpy.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strnequ.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strnew.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strnstr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strrchr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strsplit.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strstr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strsub.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_strtrim.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_swap.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_tolower.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_toupper.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/ft_word_counter.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/get_next_line.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/get_next_line.h">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/min_max.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/libft/vardump.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/lines.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/main.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/projection.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/rotation.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/struct.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/collab/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

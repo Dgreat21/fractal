@@ -1,0 +1,4 @@
+/Users/dgreat/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/dgreat/Documents/fractal
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/dgreat/Documents/fractal/cmake-build-debug

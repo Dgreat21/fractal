@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="fdf"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/dgreat/Documents/fractal/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ft">
+				<Option output="/Users/dgreat/Documents/fractal/cmake-build-debug/libft.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dgreat/Documents/fractal/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/dgreat/Documents/fractal/.:libft:/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ft/fast">
+				<Option output="/Users/dgreat/Documents/fractal/cmake-build-debug/libft.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dgreat/Documents/fractal/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/dgreat/Documents/fractal/.:libft:/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/dgreat/Documents/fractal/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/dgreat/Documents/fractal/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="f">
+				<Option output="/Users/dgreat/Documents/fractal/cmake-build-debug/f" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dgreat/Documents/fractal/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/dgreat/Documents/fractal/.:libft:/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 f"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="f/fast">
+				<Option output="/Users/dgreat/Documents/fractal/cmake-build-debug/f" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dgreat/Documents/fractal/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/dgreat/Documents/fractal/.:libft:/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 f/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fdf">
+				<Option working_dir="/Users/dgreat/Documents/fractal/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 fdf"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dgreat/Documents/fractal/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/dgreat/Documents/fractal/debug.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/draw_lines.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/events.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/events_bonus.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/fract_ol.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/fract_ol.h">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/handler.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/endl.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/error_notice.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/fract.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/free_str.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_atoi.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_atoi_base.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_bzero.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_fswap.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_isalnum.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_isalpha.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_isascii.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_isdigit.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_isprint.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_iswhitespace.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_itoa.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_itoa_base.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_ldel.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_log.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_lst_clear.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_lstadd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_lstadd_end.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_lstdel.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_lstdelone.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_lstiter.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_lstmap.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_lstnew.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_memalloc.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_memccpy.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_memchr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_memcmp.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_memcpy.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_memdel.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_memmove.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_memset.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_pow_uint.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_putchar.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_putchar_fd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_putendl.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_putendl_fd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_putnbr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_putnbr_base.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_putnbr_fd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_putstr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_putstr_fd.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_realloc.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strcat.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strchr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strchr_safe.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strclr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strcmp.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strcpy.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strcpy_safe.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strdel.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strdup.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strdup_safe.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strequ.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_striter.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_striteri.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strjoin.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strlcat.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strlen.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strmap.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strmapi.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strmlen.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strncat.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strncmp.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strncpy.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strnequ.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strnew.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strnstr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strrchr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strsplit.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strstr.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strsub.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_strtrim.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_swap.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_tolower.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_toupper.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/ft_word_counter.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/get_next_line.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/get_next_line.h">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/min_max.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/libft/vardump.c">
+			<Option target="ft"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/lines.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/main.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/projection.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/rotation.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/struct.c">
+			<Option target="f"/>
+		</Unit>
+		<Unit filename="/Users/dgreat/Documents/fractal/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

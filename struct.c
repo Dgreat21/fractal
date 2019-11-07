@@ -55,25 +55,25 @@ void	swap_glist(t_point *a, t_point *b)
 	ft_swap(&(a->hue.hex_color), &(b->hue.hex_color));
 }
 
-t_line	line(t_point a, t_point b)
-{
-	t_line	l;
-	t_point d;
-
-	l.d0 = a;
-	l.d1 = b;
-	d = set_dot(l.d1.x - l.d0.x, l.d1.y - l.d0.y);
-	if (fabsf(d.y) > fabsf(d.x))
-	{
-		l.dir = 0;
-		l.k = (d.x) / (d.y);
-		(a.y > b.y) ? (swap_glist(&l.d0, &l.d1)) : (0);
-	}
-	else
-	{
-		l.dir = 1;
-		l.k = (d.y) / (d.x);
-		(a.x > b.x) ? (swap_glist(&l.d0, &l.d1)) : (0);
-	}
-	return (l);
-}
+//t_line	line(t_point a, t_point b)
+//{
+//	t_line	l;
+//	t_point d;
+//
+//	l.d0 = a;
+//	l.d1 = b;
+//	d = set_dot(l.d1.x - l.d0.x, l.d1.y - l.d0.y);
+//	if (fabsf(d.y) > fabsf(d.x))
+//	{
+//		l.dir = 0;
+//		l.k = (d.x) / (d.y);
+//		(a.y > b.y) ? (swap_glist(&l.d0, &l.d1)) : (0);
+//	}
+//	else
+//	{
+//		l.dir = 1;
+//		l.k = (d.y) / (d.x);
+//		(a.x > b.x) ? (swap_glist(&l.d0, &l.d1)) : (0);
+//	}
+//	return (l);
+//}

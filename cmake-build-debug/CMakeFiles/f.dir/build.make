@@ -57,35 +57,22 @@ include CMakeFiles/f.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/f.dir/flags.make
 
-CMakeFiles/f.dir/fract_ol.c.o: CMakeFiles/f.dir/flags.make
-CMakeFiles/f.dir/fract_ol.c.o: ../fract_ol.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/f.dir/fract_ol.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/f.dir/fract_ol.c.o   -c /Users/dgreat/Documents/fractal/fract_ol.c
+CMakeFiles/f.dir/fractol.c.o: CMakeFiles/f.dir/flags.make
+CMakeFiles/f.dir/fractol.c.o: ../fractol.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/f.dir/fractol.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/f.dir/fractol.c.o   -c /Users/dgreat/Documents/fractal/fractol.c
 
-CMakeFiles/f.dir/fract_ol.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/f.dir/fract_ol.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dgreat/Documents/fractal/fract_ol.c > CMakeFiles/f.dir/fract_ol.c.i
+CMakeFiles/f.dir/fractol.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/f.dir/fractol.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dgreat/Documents/fractal/fractol.c > CMakeFiles/f.dir/fractol.c.i
 
-CMakeFiles/f.dir/fract_ol.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/f.dir/fract_ol.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dgreat/Documents/fractal/fract_ol.c -o CMakeFiles/f.dir/fract_ol.c.s
-
-CMakeFiles/f.dir/handler.c.o: CMakeFiles/f.dir/flags.make
-CMakeFiles/f.dir/handler.c.o: ../handler.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/f.dir/handler.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/f.dir/handler.c.o   -c /Users/dgreat/Documents/fractal/handler.c
-
-CMakeFiles/f.dir/handler.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/f.dir/handler.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dgreat/Documents/fractal/handler.c > CMakeFiles/f.dir/handler.c.i
-
-CMakeFiles/f.dir/handler.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/f.dir/handler.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dgreat/Documents/fractal/handler.c -o CMakeFiles/f.dir/handler.c.s
+CMakeFiles/f.dir/fractol.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/f.dir/fractol.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dgreat/Documents/fractal/fractol.c -o CMakeFiles/f.dir/fractol.c.s
 
 CMakeFiles/f.dir/lines.c.o: CMakeFiles/f.dir/flags.make
 CMakeFiles/f.dir/lines.c.o: ../lines.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/f.dir/lines.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/f.dir/lines.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/f.dir/lines.c.o   -c /Users/dgreat/Documents/fractal/lines.c
 
 CMakeFiles/f.dir/lines.c.i: cmake_force
@@ -98,7 +85,7 @@ CMakeFiles/f.dir/lines.c.s: cmake_force
 
 CMakeFiles/f.dir/events_bonus.c.o: CMakeFiles/f.dir/flags.make
 CMakeFiles/f.dir/events_bonus.c.o: ../events_bonus.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/f.dir/events_bonus.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/f.dir/events_bonus.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/f.dir/events_bonus.c.o   -c /Users/dgreat/Documents/fractal/events_bonus.c
 
 CMakeFiles/f.dir/events_bonus.c.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/f.dir/events_bonus.c.s: cmake_force
 
 CMakeFiles/f.dir/main.c.o: CMakeFiles/f.dir/flags.make
 CMakeFiles/f.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/f.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/f.dir/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/f.dir/main.c.o   -c /Users/dgreat/Documents/fractal/main.c
 
 CMakeFiles/f.dir/main.c.i: cmake_force
@@ -124,7 +111,7 @@ CMakeFiles/f.dir/main.c.s: cmake_force
 
 CMakeFiles/f.dir/struct.c.o: CMakeFiles/f.dir/flags.make
 CMakeFiles/f.dir/struct.c.o: ../struct.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/f.dir/struct.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/f.dir/struct.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/f.dir/struct.c.o   -c /Users/dgreat/Documents/fractal/struct.c
 
 CMakeFiles/f.dir/struct.c.i: cmake_force
@@ -137,7 +124,7 @@ CMakeFiles/f.dir/struct.c.s: cmake_force
 
 CMakeFiles/f.dir/debug.c.o: CMakeFiles/f.dir/flags.make
 CMakeFiles/f.dir/debug.c.o: ../debug.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/f.dir/debug.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/f.dir/debug.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/f.dir/debug.c.o   -c /Users/dgreat/Documents/fractal/debug.c
 
 CMakeFiles/f.dir/debug.c.i: cmake_force
@@ -150,7 +137,7 @@ CMakeFiles/f.dir/debug.c.s: cmake_force
 
 CMakeFiles/f.dir/draw_lines.c.o: CMakeFiles/f.dir/flags.make
 CMakeFiles/f.dir/draw_lines.c.o: ../draw_lines.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/f.dir/draw_lines.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/f.dir/draw_lines.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/f.dir/draw_lines.c.o   -c /Users/dgreat/Documents/fractal/draw_lines.c
 
 CMakeFiles/f.dir/draw_lines.c.i: cmake_force
@@ -163,7 +150,7 @@ CMakeFiles/f.dir/draw_lines.c.s: cmake_force
 
 CMakeFiles/f.dir/projection.c.o: CMakeFiles/f.dir/flags.make
 CMakeFiles/f.dir/projection.c.o: ../projection.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/f.dir/projection.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/f.dir/projection.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/f.dir/projection.c.o   -c /Users/dgreat/Documents/fractal/projection.c
 
 CMakeFiles/f.dir/projection.c.i: cmake_force
@@ -176,7 +163,7 @@ CMakeFiles/f.dir/projection.c.s: cmake_force
 
 CMakeFiles/f.dir/events.c.o: CMakeFiles/f.dir/flags.make
 CMakeFiles/f.dir/events.c.o: ../events.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/f.dir/events.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/f.dir/events.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/f.dir/events.c.o   -c /Users/dgreat/Documents/fractal/events.c
 
 CMakeFiles/f.dir/events.c.i: cmake_force
@@ -189,7 +176,7 @@ CMakeFiles/f.dir/events.c.s: cmake_force
 
 CMakeFiles/f.dir/rotation.c.o: CMakeFiles/f.dir/flags.make
 CMakeFiles/f.dir/rotation.c.o: ../rotation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/f.dir/rotation.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/f.dir/rotation.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/f.dir/rotation.c.o   -c /Users/dgreat/Documents/fractal/rotation.c
 
 CMakeFiles/f.dir/rotation.c.i: cmake_force
@@ -202,8 +189,7 @@ CMakeFiles/f.dir/rotation.c.s: cmake_force
 
 # Object files for target f
 f_OBJECTS = \
-"CMakeFiles/f.dir/fract_ol.c.o" \
-"CMakeFiles/f.dir/handler.c.o" \
+"CMakeFiles/f.dir/fractol.c.o" \
 "CMakeFiles/f.dir/lines.c.o" \
 "CMakeFiles/f.dir/events_bonus.c.o" \
 "CMakeFiles/f.dir/main.c.o" \
@@ -217,8 +203,7 @@ f_OBJECTS = \
 # External object files for target f
 f_EXTERNAL_OBJECTS =
 
-f : CMakeFiles/f.dir/fract_ol.c.o
-f : CMakeFiles/f.dir/handler.c.o
+f : CMakeFiles/f.dir/fractol.c.o
 f : CMakeFiles/f.dir/lines.c.o
 f : CMakeFiles/f.dir/events_bonus.c.o
 f : CMakeFiles/f.dir/main.c.o
@@ -231,7 +216,7 @@ f : CMakeFiles/f.dir/rotation.c.o
 f : CMakeFiles/f.dir/build.make
 f : libft.a
 f : CMakeFiles/f.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable f"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable f"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/f.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

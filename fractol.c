@@ -6,7 +6,7 @@
 /*   By: dgreat <dgreat@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 21:03:49 by dgreat            #+#    #+#             */
-/*   Updated: 2019/11/05 21:51:30 by dgreat           ###   ########.fr       */
+/*   Updated: 2019/11/07 00:52:37 by dgreat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,31 +44,13 @@ void		pixel_img(t_mlx *win, t_point dot)
 	}
 }
 
-void		mandelbrot(t_all win)
-{
-	int	y;
-	int	x;
 
-	y = 0;
-	while (y < LENGTH)
-	{
-		x = 0;
-		fract->coord.c_y = fract->maxy - y * fract->shy + fract->ud;
-		while (x < WIDTH)
-		{
-			fract->coord.c_x = fract->minx + x * fract->shx + fract->lr;
-			calculate_mandelbrot(x, y, fract);
-			x++;
-		}
-		y++;
-	}
-}
 
-void		draw(t_all win)
-{
-
-	mandelbrot(win);
-}
+//void		draw(t_all win)
+//{
+//
+//	mandelbrot(win);
+//}
 
 float		perc(float start, float end, float cur)
 {

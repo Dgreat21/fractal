@@ -6,7 +6,7 @@
 /*   By: dgreat <dgreat@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 21:50:50 by dgreat            #+#    #+#             */
-/*   Updated: 2019/11/05 20:04:20 by dgreat           ###   ########.fr       */
+/*   Updated: 2019/11/07 01:25:37 by dgreat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,15 @@
 # define WHITE 0xffffff
 # define YELLOW 0xffff00
 
+# define MAX_ITER		100
+# define MAX_X			2.0
+# define MIN_X			-2.0
+# define MIN_Y			-2.0
+# define MAX_Y			MIN_Y + (MAX_X - MIN_X) * LENGTH / WIDE
+# define SHIFT_X		(MAX_X - MIN_X) / (WIDE - 1)
+# define SHIFT_Y		(MAX_Y - MIN_Y) / (LENGTH - 1)
+# define REPEATS		30
+
 /*
 ** ************************************************************************** **
 ** Definition and typedef
@@ -86,8 +95,8 @@ enum				e_o{Y, X};
 
 typedef struct		s_mlx
 {
-	int				w;
-	int				l;
+	int				wide;
+	int				length;
 	int				mid[2];
 	void			*mp;
 	void			*wp;
@@ -137,23 +146,36 @@ typedef struct		s_mlx
 //	void			*img;
 //}					t_mlx;
 
-//typedef struct		s_cmplx
-//{
-//	int				key;
-//	double			c_x;
-//	double			c_y;
-//	double			z_x;
-//	double			z_y;
-//	double			sqr_z_x;
-//	double			sqr_z_y;
-//}					t_cmplx;
+typedef struct		s_cmplx
+{
+	int				key;
+	double			c_x;
+	double			c_y;
+	double			z_x;
+	double			z_y;
+	double			sqr_z_x;
+	double			sqr_z_y;
+}					t_cmplx;
 
 typedef struct		s_fractol
 {
-	int				key;
-	int				color;
 	t_mlx			*mlx;
-	t_complex		*cmplx;
+	int				key;
+	int				it;
+	int				mouse;
+	int				color;
+	double			speed;
+	double			ud;
+	double			lr;
+	double			minx;
+	double			maxx;
+	double			miny;
+	double			maxy;
+	double			shift_x;
+	double			shift_y;
+	double			zoom;
+	t_cmplx			*cmplx;
+//	t_complex		*cmplx;
 }					t_all;
 
 

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/f.dir/fract_ol.c.o"
-  "CMakeFiles/f.dir/handler.c.o"
+  "CMakeFiles/f.dir/fractol.c.o"
   "CMakeFiles/f.dir/lines.c.o"
   "CMakeFiles/f.dir/events_bonus.c.o"
   "CMakeFiles/f.dir/main.c.o"

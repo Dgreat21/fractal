@@ -6,7 +6,7 @@
 /*   By: dgreat <dgreat@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 08:46:39 by dgreat            #+#    #+#             */
-/*   Updated: 2019/11/05 19:36:50 by dgreat           ###   ########.fr       */
+/*   Updated: 2019/11/07 11:11:33 by dgreat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,22 @@
 #ifndef FDF_COMPLEX_H
 # define FDF_COMPLEX_H
 
+//typedef struct s_complex t_complex;
+//
+//typedef t_complex (*set_complex_func)(float re, float im);
+
 typedef			struct s_complex
 {
-float			re;
-float			im;
-const void*		set_complex;
-const void*		cplx_plus;
-const void*		cplx_minus;
-const void*		cplx_mult_num;
-const void*		cplx_rev_num;
-const void*		cplx_abs_num;
-const void*		cplx_arg;
-const void*		cplx_mult;
+float				re;
+float				im;
+//set_complex_func	*ptr;
+//const void*		cplx_plus;
+//const void*		cplx_minus;
+//const void*		cplx_mult_num;
+//const void*		cplx_rev_num;
+//const void*		cplx_abs_num;
+//const void*		cplx_arg;
+//const void*		cplx_mult;
 }				t_complex;
 
 t_complex			contruct();

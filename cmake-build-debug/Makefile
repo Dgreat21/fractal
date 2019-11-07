@@ -257,59 +257,32 @@ events_bonus.c.s:
 	$(MAKE) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/events_bonus.c.s
 .PHONY : events_bonus.c.s
 
-fract_ol.o: fract_ol.c.o
+fractol.o: fractol.c.o
 
-.PHONY : fract_ol.o
-
-# target to build an object file
-fract_ol.c.o:
-	$(MAKE) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/fract_ol.c.o
-.PHONY : fract_ol.c.o
-
-fract_ol.i: fract_ol.c.i
-
-.PHONY : fract_ol.i
-
-# target to preprocess a source file
-fract_ol.c.i:
-	$(MAKE) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/fract_ol.c.i
-.PHONY : fract_ol.c.i
-
-fract_ol.s: fract_ol.c.s
-
-.PHONY : fract_ol.s
-
-# target to generate assembly for a file
-fract_ol.c.s:
-	$(MAKE) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/fract_ol.c.s
-.PHONY : fract_ol.c.s
-
-handler.o: handler.c.o
-
-.PHONY : handler.o
+.PHONY : fractol.o
 
 # target to build an object file
-handler.c.o:
-	$(MAKE) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/handler.c.o
-.PHONY : handler.c.o
+fractol.c.o:
+	$(MAKE) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/fractol.c.o
+.PHONY : fractol.c.o
 
-handler.i: handler.c.i
+fractol.i: fractol.c.i
 
-.PHONY : handler.i
+.PHONY : fractol.i
 
 # target to preprocess a source file
-handler.c.i:
-	$(MAKE) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/handler.c.i
-.PHONY : handler.c.i
+fractol.c.i:
+	$(MAKE) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/fractol.c.i
+.PHONY : fractol.c.i
 
-handler.s: handler.c.s
+fractol.s: fractol.c.s
 
-.PHONY : handler.s
+.PHONY : fractol.s
 
 # target to generate assembly for a file
-handler.c.s:
-	$(MAKE) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/handler.c.s
-.PHONY : handler.c.s
+fractol.c.s:
+	$(MAKE) -f CMakeFiles/f.dir/build.make CMakeFiles/f.dir/fractol.c.s
+.PHONY : fractol.c.s
 
 libft/endl.o: libft/endl.c.o
 
@@ -2683,12 +2656,9 @@ help:
 	@echo "... events_bonus.o"
 	@echo "... events_bonus.i"
 	@echo "... events_bonus.s"
-	@echo "... fract_ol.o"
-	@echo "... fract_ol.i"
-	@echo "... fract_ol.s"
-	@echo "... handler.o"
-	@echo "... handler.i"
-	@echo "... handler.s"
+	@echo "... fractol.o"
+	@echo "... fractol.i"
+	@echo "... fractol.s"
 	@echo "... libft/endl.o"
 	@echo "... libft/endl.i"
 	@echo "... libft/endl.s"

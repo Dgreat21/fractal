@@ -152,13 +152,10 @@
 		<Unit filename="/Users/dgreat/Documents/fractal/events_bonus.c">
 			<Option target="f"/>
 		</Unit>
-		<Unit filename="/Users/dgreat/Documents/fractal/fract_ol.c">
+		<Unit filename="/Users/dgreat/Documents/fractal/fractol.c">
 			<Option target="f"/>
 		</Unit>
-		<Unit filename="/Users/dgreat/Documents/fractal/fract_ol.h">
-			<Option target="f"/>
-		</Unit>
-		<Unit filename="/Users/dgreat/Documents/fractal/handler.c">
+		<Unit filename="/Users/dgreat/Documents/fractal/fractol.h">
 			<Option target="f"/>
 		</Unit>
 		<Unit filename="/Users/dgreat/Documents/fractal/libft/endl.c">

@@ -3,70 +3,46 @@
 
 CMakeFiles/f.dir/debug.c.o
  /Users/dgreat/Documents/fractal/debug.c
- /Users/dgreat/Documents/fractal/fract_ol.h
- /Users/dgreat/Documents/fractal/libft/get_next_line.h
- /Users/dgreat/Documents/fractal/libft/libft.h
- /Users/dgreat/Documents/fractal/minilibx/mlx.h
 CMakeFiles/f.dir/draw_lines.c.o
  /Users/dgreat/Documents/fractal/draw_lines.c
- /Users/dgreat/Documents/fractal/fract_ol.h
- /Users/dgreat/Documents/fractal/libft/get_next_line.h
- /Users/dgreat/Documents/fractal/libft/libft.h
- /Users/dgreat/Documents/fractal/minilibx/mlx.h
 CMakeFiles/f.dir/events.c.o
  /Users/dgreat/Documents/fractal/events.c
- /Users/dgreat/Documents/fractal/fract_ol.h
- /Users/dgreat/Documents/fractal/keys.h
- /Users/dgreat/Documents/fractal/libft/get_next_line.h
- /Users/dgreat/Documents/fractal/libft/libft.h
- /Users/dgreat/Documents/fractal/minilibx/mlx.h
 CMakeFiles/f.dir/events_bonus.c.o
  /Users/dgreat/Documents/fractal/events_bonus.c
- /Users/dgreat/Documents/fractal/fract_ol.h
- /Users/dgreat/Documents/fractal/keys.h
- /Users/dgreat/Documents/fractal/libft/get_next_line.h
- /Users/dgreat/Documents/fractal/libft/libft.h
- /Users/dgreat/Documents/fractal/minilibx/mlx.h
-CMakeFiles/f.dir/fract_ol.c.o
- /Users/dgreat/Documents/fractal/fract_ol.c
- /Users/dgreat/Documents/fractal/fract_ol.h
- /Users/dgreat/Documents/fractal/libft/get_next_line.h
- /Users/dgreat/Documents/fractal/libft/libft.h
- /Users/dgreat/Documents/fractal/minilibx/mlx.h
-CMakeFiles/f.dir/handler.c.o
- /Users/dgreat/Documents/fractal/fract_ol.h
- /Users/dgreat/Documents/fractal/handler.c
- /Users/dgreat/Documents/fractal/keys.h
+CMakeFiles/f.dir/fractol.c.o
+ /Users/dgreat/Documents/fractal/complex/complex.h
+ /Users/dgreat/Documents/fractal/fractol.c
+ /Users/dgreat/Documents/fractal/fractol.h
  /Users/dgreat/Documents/fractal/libft/get_next_line.h
  /Users/dgreat/Documents/fractal/libft/libft.h
  /Users/dgreat/Documents/fractal/minilibx/mlx.h
 CMakeFiles/f.dir/lines.c.o
- /Users/dgreat/Documents/fractal/fract_ol.h
+ /Users/dgreat/Documents/fractal/complex/complex.h
+ /Users/dgreat/Documents/fractal/fractol.h
  /Users/dgreat/Documents/fractal/libft/get_next_line.h
  /Users/dgreat/Documents/fractal/libft/libft.h
  /Users/dgreat/Documents/fractal/lines.c
  /Users/dgreat/Documents/fractal/minilibx/mlx.h
 CMakeFiles/f.dir/main.c.o
- /Users/dgreat/Documents/fractal/fract_ol.h
+ /Users/dgreat/Documents/fractal/complex/complex.h
+ /Users/dgreat/Documents/fractal/fractol.h
  /Users/dgreat/Documents/fractal/keys.h
  /Users/dgreat/Documents/fractal/libft/get_next_line.h
  /Users/dgreat/Documents/fractal/libft/libft.h
  /Users/dgreat/Documents/fractal/main.c
  /Users/dgreat/Documents/fractal/minilibx/mlx.h
 CMakeFiles/f.dir/projection.c.o
- /Users/dgreat/Documents/fractal/fract_ol.h
- /Users/dgreat/Documents/fractal/libft/get_next_line.h
- /Users/dgreat/Documents/fractal/libft/libft.h
- /Users/dgreat/Documents/fractal/minilibx/mlx.h
  /Users/dgreat/Documents/fractal/projection.c
 CMakeFiles/f.dir/rotation.c.o
- /Users/dgreat/Documents/fractal/fract_ol.h
+ /Users/dgreat/Documents/fractal/complex/complex.h
+ /Users/dgreat/Documents/fractal/fractol.h
  /Users/dgreat/Documents/fractal/libft/get_next_line.h
  /Users/dgreat/Documents/fractal/libft/libft.h
  /Users/dgreat/Documents/fractal/minilibx/mlx.h
  /Users/dgreat/Documents/fractal/rotation.c
 CMakeFiles/f.dir/struct.c.o
- /Users/dgreat/Documents/fractal/fract_ol.h
+ /Users/dgreat/Documents/fractal/complex/complex.h
+ /Users/dgreat/Documents/fractal/fractol.h
  /Users/dgreat/Documents/fractal/libft/get_next_line.h
  /Users/dgreat/Documents/fractal/libft/libft.h
  /Users/dgreat/Documents/fractal/minilibx/mlx.h

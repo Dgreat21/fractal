@@ -6,13 +6,15 @@
 /*   By: dgreat <dgreat@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 08:46:39 by dgreat            #+#    #+#             */
-/*   Updated: 2019/11/07 11:11:33 by dgreat           ###   ########.fr       */
+/*   Updated: 2019/11/11 06:48:23 by dgreat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #ifndef FDF_COMPLEX_H
 # define FDF_COMPLEX_H
+
+# include "math.h"
 
 //typedef struct s_complex t_complex;
 //
@@ -23,32 +25,38 @@ typedef			struct s_complex
 float				re;
 float				im;
 //set_complex_func	*ptr;
-//const void*		cplx_plus;
-//const void*		cplx_minus;
-//const void*		cplx_mult_num;
-//const void*		cplx_rev_num;
-//const void*		cplx_abs_num;
-//const void*		cplx_arg;
-//const void*		cplx_mult;
+//const void*		cmplx_plus;
+//const void*		cmplx_minus;
+//const void*		cmplx_mult_num;
+//const void*		cmplx_rev_num;
+//const void*		cmplx_abs_num;
+//const void*		cmplx_arg;
+//const void*		cmplx_mult;
 }				t_complex;
 
 t_complex			contruct();
 
+int					ft_abs(float x);
+
 t_complex			set_complex(float re, float im);
 
-t_complex			cplx_plus(t_complex a, t_complex b);
+t_complex			cmplx_plus(t_complex a, t_complex b);
 
-t_complex			cplx_minus(t_complex a, t_complex b);
+t_complex			cmplx_minus(t_complex a, t_complex b);
 
-t_complex			cplx_mult_num(t_complex x, float alpha);
+t_complex			cmplx_pow(t_complex a, int power);
 
-t_complex			cplx_rev_num(t_complex x);
+t_complex			cmplx_mult_num(t_complex x, float alpha);
 
-float				cplx_abs_num(t_complex x);
+t_complex			cmplx_rev_num(t_complex x);
 
-float 				cplx_arg(t_complex a);
+float				cmplx_abs_num(t_complex x);
 
-t_complex			cplx_mult(t_complex a, t_complex b);
+float 				cmplx_arg(t_complex a);
+
+t_complex			cmplx_mult(t_complex a, t_complex b);
+
+t_complex			cmplx_sqr(t_complex a);
 
 
-#endif FDF_COMPLEX_H
+# endif

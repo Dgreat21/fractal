@@ -6,7 +6,7 @@
 /*   By: dgreat <dgreat@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 21:50:50 by dgreat            #+#    #+#             */
-/*   Updated: 2019/11/07 01:25:37 by dgreat           ###   ########.fr       */
+/*   Updated: 2019/11/11 04:26:29 by dgreat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,10 @@
 */
 
 # include <math.h>
-# include "libft/libft.h"
+# include "libft/inc/libft.h"
 # include "complex/complex.h"
+# include "inc/keys.h"
+# include <mlx.h>
 
 /*
 ** ************************************************************************** **
@@ -58,6 +60,12 @@
 # define MAX_Y			MIN_Y + (MAX_X - MIN_X) * LENGTH / WIDE
 # define SHIFT_X		(MAX_X - MIN_X) / (WIDE - 1)
 # define SHIFT_Y		(MAX_Y - MIN_Y) / (LENGTH - 1)
+# define S_MANDELBROT	"MANDELBROT"
+# define S_JULIA		"JULIA"
+# define S_BSHP			"BURNING SHIP"
+# define MANDELBROT		1
+# define JULIA			2
+# define BSHP			3
 # define REPEATS		30
 
 /*
@@ -120,31 +128,6 @@ typedef struct		s_mlx
 //	int				left_right;
 //	int				up_down;
 //}					t_opt;
-//
-//enum				e_o{Y, X};
-//
-//typedef struct		s_mlx
-//{
-//	void			*mp;
-//	void			*wp;
-//	int				w;
-//	int				l;
-//	int				mid[2];
-//	t_point			map;
-//	unsigned int	scale;
-//	struct s_opt	opt;
-//	t_point			**list;
-//	int				bpp;
-//	int				lsize;
-//	int				endian;
-//	t_color			low;
-//	t_color			high;
-//	double			rotx;
-//	double			roty;
-//	double			rotz;
-//	char			*data;
-//	void			*img;
-//}					t_mlx;
 
 typedef struct		s_cmplx
 {
@@ -174,20 +157,10 @@ typedef struct		s_fractol
 	double			shift_x;
 	double			shift_y;
 	double			zoom;
-	t_cmplx			*cmplx;
+	t_cmplx			cmplx;
 //	t_complex		*cmplx;
 }					t_all;
 
-
-
-//typedef struct		s_line
-//{
-//	t_point			d0;
-//	t_point			d1;
-//	short			dir;
-//	float			k;
-//	short			show;
-//}					t_line;
 
 /*
 ** ************************************************************************** **
@@ -195,41 +168,14 @@ typedef struct		s_fractol
 ** ************************************************************************** **
 */
 
-/*
-**					main.c
-*/
 
 t_mlx				*window(int w, int l);
 
-/*
-**					fdf.c
-*/
 
 int					brightness(t_color hue, float k);
 
-void				pixel_img(t_mlx *win, t_point dot);
-
-void				pixel_c(t_mlx win, t_point dot);
-
 float				perc(float start, float end, float cur);
 
-//int					grad(float k, t_line l, float x);
-
-/*
-**					draw_lines.c
-*/
-
-//void				dot_md(t_mlx *win, t_line l);
-//
-//void				brez(t_mlx *win, t_line l);
-//
-//void				drawer(t_mlx *win, t_line l);
-//
-//void				drawer_grad(t_mlx *win, t_line l);
-
-/*
-**					struct.c
-*/
 
 t_point				set_dot(float x, float y);
 
@@ -239,7 +185,6 @@ t_point				set_xyz(float x, float y, char *z_color, int color);
 
 void				swap_glist(t_point *a, t_point *b);
 
-//t_line				line(t_point a, t_point b);
 
 /*
 **					debug.c
@@ -249,18 +194,9 @@ void				vard(char *s, t_point a);
 
 void				vardot(char *s, t_point a);
 
-void				each_dot(t_mlx win, t_point **tab,
-		void (*f)(char *, t_point));
+//void				each_dot(t_mlx win, t_point **tab,
+//		void (*f)(char *, t_point));
 
-/*
-**					lines.c
-*/
-
-//void				draw_map(t_mlx *win, t_point **map);
-
-/*
-**					projection.c
-*/
 
 /*
 **					events.c
@@ -282,10 +218,13 @@ void				each_dot(t_mlx win, t_point **tab,
 //
 //void				color(int key, t_mlx *win);
 
-/*
-**					handler.c
-*/
 
 void				fractol(t_all *win);
+
+void				hook_init(t_all *all);
+
+void				draw(t_all *all);
+
+t_all	*init();
 
 #endif

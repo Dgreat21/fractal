@@ -7,7 +7,7 @@ project(COMPLEX VERSION 1.0 LANGUAGES C)
 add_library(complex STATIC)
 
 set(${PROJECT_NAME}_INCLUDE_DIRS
-        ${PROJECT_SOURCE_DIR}/inc
+        ${PROJECT_SOURCE_DIR}/includes
         CACHE INTERNAL "${PROJECT_NAME}: Include Directories" FORCE)
 
 include_directories(${LIBFT_INCLUDE_DIRS})

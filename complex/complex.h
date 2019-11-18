@@ -58,5 +58,7 @@ t_complex			cmplx_mult(t_complex a, t_complex b);
 
 t_complex			cmplx_sqr(t_complex a);
 
+t_complex			cmplx_sqr_abs(t_complex a);
+
 
 # endif

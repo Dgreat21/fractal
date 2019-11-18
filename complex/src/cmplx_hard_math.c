@@ -71,10 +71,14 @@ t_complex	cmplx_sqr(t_complex a)
 	return (cmplx_mult(a, a));
 }
 
-//t_complex	cmplx_dev(t_complex a, t_complex b)
-//{//todo
-//	const t_complex c;
-//
-//	c = set_num(a.re - b.re, a.im - b.im);
-//	return (c);
-//}
+t_complex	cmplx_sqr_abs(t_complex a)
+{
+	t_complex  c;
+
+	a.re = fabs(a.re);
+	a.im = fabs(a.im);
+	c.re = (a.re * a.re) - (a.im * a.im);
+	c.im = (a.re * a.im) + (a.im * a.re);
+	return (c);
+}
+

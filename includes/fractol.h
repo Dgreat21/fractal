@@ -6,7 +6,7 @@
 /*   By: dgreat <dgreat@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 21:50:50 by dgreat            #+#    #+#             */
-/*   Updated: 2019/11/18 16:11:32 by dgreat           ###   ########.fr       */
+/*   Updated: 2019/11/18 17:16:31 by dgreat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@
 */
 
 # define LEN 100
-# define WIDE 1000
-# define LENGTH 1000
+# define WIDE 500
+# define LENGTH 500
 
 //# define AQUA 0x00ffff
 //# define BLACK 0x000000
@@ -91,9 +91,9 @@ typedef union		u_color
 
 typedef struct		s_point
 {
-	float			x;
-	float			y;
-	float			z;
+	int			x;
+	int			y;
+	int			z;
 	t_color			hue;
 	t_color			color;
 }					t_point;
@@ -145,6 +145,7 @@ typedef struct		s_fractol
 	double			shift_x;
 	double			shift_y;
 	double			zoom;
+	t_point			mouse_pos;
 	t_complex		cmplx;
 }					t_all;
 
@@ -163,7 +164,7 @@ int					brightness(t_color hue, float k);
 float				perc(float start, float end, float cur);
 
 
-//t_point				set_dot(float x, float y);
+t_point				set_dot(int x, int y);
 //
 //t_point				set_dot_c(float x, float y, int hue);
 
@@ -188,7 +189,11 @@ float				perc(float start, float end, float cur);
 //void				coloring(int key, t_mlx *win);
 //
 //void				color(int key, t_mlx *win);
+int mouse_hand(int x, int y, void *param);
+
 int	key_press(int key, void *param);
+
+int		get_color(int max_iter, int iteration);
 
 void				fractol(t_all *win);
 
@@ -200,6 +205,8 @@ t_all	*init();
 void	mandelbrot(t_all *all);
 
 void		julia(t_all *all);
+
+void		burning_ship(t_all *all);
 
 void	put_pixel(t_all *all, int x, int y, int iteration);
 

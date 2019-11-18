@@ -67,12 +67,14 @@ void	put_pixel(t_all *all, int x, int y, int iteration)
 void	draw(t_all *all)
 {
 	ft_bzero(all->mlx->data, WIDE * LENGTH * sizeof(int));
+
 	if (all->key == MANDELBROT)
 		mandelbrot(all);
 	else if (all->key == JULIA)
 		julia(all);
-//	else if (all->key == BSHP)
-//		bshp(all);
-	mlx_put_image_to_window(all->mlx->mp, all->mlx->wp, all->mlx->img,
-			0, 0);
+	else if (all->key == BSHP)
+		burning_ship(all);
+//	mlx_put_image_to_window(all->mlx->mp, all->mlx->wp, all->mlx->img,
+//			0, 0);
+	printf("test\n");
 }

@@ -6,7 +6,7 @@
 /*   By: dgreat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 03:07:21 by dgreat            #+#    #+#             */
-/*   Updated: 2019/11/18 16:11:17 by dgreat           ###   ########.fr       */
+/*   Updated: 2019/11/18 17:19:04 by dgreat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,8 @@ void		hook_init(t_all *all)
 {
 	mlx_hook(all->mlx->wp, 17, 0, close_window, all);
 	mlx_hook(all->mlx->wp, 2, 0, key_press, all);
+	mlx_hook(all->mlx->wp, 6, 0L, mouse_hand, all);
+//	mlx_mouse_hook(all->mlx->wp, mouse_hand, all);
 	mlx_key_hook(all->mlx->wp, key, (void *)0);
 }
 
@@ -66,6 +68,7 @@ int			main(int ac, char **av)
 		all->key = parse_input_str(av);
 		hook_init(all);
 		draw(all);
+
 		mlx_loop(all->mlx->mp);
 	}
 	else

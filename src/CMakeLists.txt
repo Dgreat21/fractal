@@ -10,5 +10,5 @@ target_sources(fractol PUBLIC
         main.c
         fractal_mandelbrot.c
         fractal_julia.c
-        re_main.c
+        fractal_burning_ship.c
         struct.c)

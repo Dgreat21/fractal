@@ -500,32 +500,32 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/main.c.s
 .PHONY : src/main.c.s
 
-src/re_main.o: src/re_main.c.o
+src/mouse.o: src/mouse.c.o
 
-.PHONY : src/re_main.o
+.PHONY : src/mouse.o
 
 # target to build an object file
-src/re_main.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/re_main.c.o
-.PHONY : src/re_main.c.o
+src/mouse.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/mouse.c.o
+.PHONY : src/mouse.c.o
 
-src/re_main.i: src/re_main.c.i
+src/mouse.i: src/mouse.c.i
 
-.PHONY : src/re_main.i
+.PHONY : src/mouse.i
 
 # target to preprocess a source file
-src/re_main.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/re_main.c.i
-.PHONY : src/re_main.c.i
+src/mouse.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/mouse.c.i
+.PHONY : src/mouse.c.i
 
-src/re_main.s: src/re_main.c.s
+src/mouse.s: src/mouse.c.s
 
-.PHONY : src/re_main.s
+.PHONY : src/mouse.s
 
 # target to generate assembly for a file
-src/re_main.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/re_main.c.s
-.PHONY : src/re_main.c.s
+src/mouse.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/mouse.c.s
+.PHONY : src/mouse.c.s
 
 src/struct.o: src/struct.c.o
 
@@ -604,9 +604,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/re_main.o"
-	@echo "... src/re_main.i"
-	@echo "... src/re_main.s"
+	@echo "... src/mouse.o"
+	@echo "... src/mouse.i"
+	@echo "... src/mouse.s"
 	@echo "... src/struct.o"
 	@echo "... src/struct.i"
 	@echo "... src/struct.s"

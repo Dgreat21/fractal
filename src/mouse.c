@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   struct.c                                           :+:      :+:    :+:   */
+/*   mouse.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dgreat <dgreat@student.42.fr>              +#+  +:+       +#+        */
+/*   By: dgreat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/02 08:49:56 by dgreat            #+#    #+#             */
-/*   Updated: 2019/11/11 05:12:42 by dgreat           ###   ########.fr       */
+/*   Created: 2019/11/18 17:09:31 by dgreat            #+#    #+#             */
+/*   Updated: 2019/11/18 17:28:53 by dgreat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol.h"
 
-t_point	set_dot(int x, int y)
+int		 mouse_hand(int x, int y, void *param)
 {
-	t_point	dot;
+	t_all 	*all;
 
-	dot.x = x;
-	dot.y = y;
-	return (dot);
+	all = (t_all *)param;
+	all->mouse_pos = set_dot(4 * (x / WIDE - 0.5),
+			4 * ((LENGTH - y) / LENGTH - 0.5));
+	return (0);
 }
-
-void	swap_glist(t_point *a, t_point *b)
-{
-	ft_swap(&(a->x), &(b->x));
-	ft_swap(&(a->y), &(b->y));
-}
-

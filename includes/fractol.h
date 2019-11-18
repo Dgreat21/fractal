@@ -6,7 +6,7 @@
 /*   By: dgreat <dgreat@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 21:50:50 by dgreat            #+#    #+#             */
-/*   Updated: 2019/11/15 18:00:34 by dgreat           ###   ########.fr       */
+/*   Updated: 2019/11/18 16:11:32 by dgreat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,9 +91,9 @@ typedef union		u_color
 
 typedef struct		s_point
 {
-	int				x;
-	int				y;
-	int				z;
+	float			x;
+	float			y;
+	float			z;
 	t_color			hue;
 	t_color			color;
 }					t_point;
@@ -133,6 +133,7 @@ typedef struct		s_fractol
 	t_mlx			*mlx;
 	int				key;
 	int				iter;
+	int				mouse;
 	int				color;
 	double			speed;
 	double			ud;
@@ -144,7 +145,6 @@ typedef struct		s_fractol
 	double			shift_x;
 	double			shift_y;
 	double			zoom;
-	t_point			mouse_pos;
 	t_complex		cmplx;
 }					t_all;
 

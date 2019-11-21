@@ -86,7 +86,8 @@ set(sources
         src/ft_word_counter.c
         src/get_next_line.c
         src/min_max.c
-        src/vardump.c)
+        src/read_file.c
+        src/vardump.c )
 
 include_directories(inc)
 

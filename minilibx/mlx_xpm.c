@@ -90,7 +90,7 @@ int	mlx_int_get_text_rgb(char *name, char *end)
   while (mlx_col_name[i].name)
     {
       if (!strcasecmp(mlx_col_name[i].name, name))
-	return (mlx_col_name[i].hue);
+	return (mlx_col_name[i].color);
       i ++;
     }
   return (0);

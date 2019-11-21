@@ -1,54 +1,60 @@
-.PHONY : all re clean fclean
+NAME = fractol
 
-.SUFFIXES :
-.SUFFIXES : .c .o .h .a
+F = -g  #-Wall -Wextra -Werror
 
-VPATH = .:libft:/usr/local/include:/usr/local/lib
+INC_DIR	=	./includes/
+SRC_DIR	=	./src/
+SRC_LST	=	draw.c                  \
+            fractal_burning_ship.c key_press.c \
+            fractal_julia.c        main.c \
+            fractal_mandelbrot.c   mouse.c \
+            init.c                 resume_cl_init.c \
+            init_cl.c              struct.c
 
-override CC = gcc
+LIBMLX = -lmlx -lm -framework OpenGL -framework AppKit
+LIBCL = -framework OpenCL
+LIBFT = -L ./libft -lft
+LIBCOMP = -L ./libcomp -lcomp
 
-override CFLAGS = -O2 -I. -Ilibft
+OBJ_DIR	=	./obj/
+OBJS	=	$(addprefix $(OBJ_DIR),$(SRC_LST:%.c=%.o))
 
-MLXFLAGS = 	-I /usr/local/include \
-			-L /usr/local/lib -lmlx \
-			-framework OpenGL \
-			-framework AppKit \
+LIBFT_DIR	=	./libft/
+LIBFT		=	$(LIBFT_DIR)libft.a
+LIBFT_HEAD	=	$(LIBFT_DIR)inc/
 
-FTFLAGS = -Llibft -lft
+CMPLX_DIR	=	./libcomp/
+CMPLX		=	$(CMPLX_DIR)libcomp.a
+CMPLX_HEAD	=	$(CMPLX_DIR)includes/
 
-FDFFLAGS = $(CFLAGS) $(FTFLAGS) $(MLXFLAGS)
+INCLUDES	=	-I$(LIBFT_HEAD) -I$(INC_DIR) -I$(CMPLX_HEAD)
 
-MAKE_LIBFT = $(MAKE) -C libft
+all: $(NAME)
 
-NAME = fdf
+$(NAME): $(LIBFT) $(CMPLX) $(OBJS)
+	gcc $F -O2 $(OBJS) $(INCLUDES) $(LIBFT) $(LIBCOMP) $(LIBCL) $(LIBMLX) -o $(NAME)
 
-SRC =	main.c \
-		debug.c \
-      	draw_lines.c \
-      	events.c \
-      	fdf.c \
-      	handler.c \
-      	lines.c \
-      	projection.c \
-      	struct.c \
-      	events_bonus.c \
-      	rotation.c
+$(OBJ_DIR)%.o: $(SRC_DIR)%.c $(INC_DIR)
+	@mkdir -p $(OBJ_DIR)
+	gcc -c -O2 $F $< $(INCLUDES) -o $@
 
-OBJ = $(SRC:.c=.o)
+$(LIBFT):
+	@make -C $(LIBFT_DIR)
 
-all ::
-	$(MAKE) -C libft
-all :: $(NAME)
+$(CMPLX):
+	make -C $(CMPLX_DIR)
 
-$(NAME) : $(OBJ)
-	$(CC) $(FDFFLAGS) $(OBJ) -o $@
+clean:
+	make -C $(LIBFT_DIR) clean
+	rm -rf $(OBJ_DIR)
 
-clean :
-	$(MAKE_LIBFT) clean
-	$(RM) -f $(OBJ)
+fclean: clean
+	make -C $(LIBFT_DIR) fclean
+	rm -f $(NAME)
 
-fclean : clean
-	$(MAKE_LIBFT) fclean
-	$(RM) -f $(NAME)
+re:	fclean all
 
-re : fclean all
+norme:
+	@norminette $(LIBFT_DIR) $(INC_DIR) $(SRC_DIR)
+
+.PHONY: all clean fclean re norme

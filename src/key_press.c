@@ -12,6 +12,22 @@
 
 #include "fractol.h"
 
+void	default_(t_all *all)
+{
+	all->zoom = 4;
+	all->mouse = 1;
+	all->speed = 0.03;
+	all->ud = 0;
+	all->lr = 0;
+	all->iter = MAX_ITER;
+	all->minx = MIN_X;
+	all->maxx = MAX_X;
+	all->miny = MIN_Y;
+	all->maxy = MAX_Y;
+	all->shift_x = SHIFT_X;
+	all->shift_y = SHIFT_Y;
+}
+
 void	change_iteration(t_all *all, int key)
 {
 	if (key == kVK_ANSI_Equal)
@@ -37,12 +53,26 @@ void	arrow_control(t_all *all, int key)
 void	zoom(t_all *all, int key)
 {
 	if (key == kVK_ANSI_KeypadPlus)
-		all->zoom *= 1.01;
+	{
+		all->minx *= 0.95;
+		all->maxx *= 0.95;
+		all->miny *= 0.95;
+		all->iter += 1;
+		all->zoom /= 1.1;
+		all->speed /= all->zoom * 8;
+	}
 	if (key == kVK_ANSI_KeypadMinus)
-		all->zoom /= 1.01;
+	{
+		all->minx *= 1.1;
+		all->maxx *= 1.1;
+		all->miny *= 1.1;
+		all->iter -= 1;
+		all->zoom *= 1.1;
+		all->speed *= all->zoom / 8;
+	}
 }
 
-int	key_press(int key, void *param)
+int		key_press(int key, void *param)
 {
 	t_all	*all;
 
@@ -55,16 +85,14 @@ int	key_press(int key, void *param)
 		all->key = JULIA;
 	else if (key == kVK_ANSI_M)
 		all->key = MANDELBROT;
+	else if (key == kVK_ANSI_D)
+		default_(all);
 	else if (key == kVK_ANSI_KeypadPlus || key == kVK_ANSI_KeypadMinus)
 		change_iteration(all, key);
 	else if (key == kVK_ANSI_Minus || key == kVK_ANSI_Equal)
 		zoom(all, key);
 	else if (key >= kVK_LeftArrow && key <= kVK_UpArrow)
 		arrow_control(all, key);
-//	else if (key == K_MEN || key == K_BOL)
-//		change_move_speed(all, key);
-//	else if (key == K_BACKSPCE)
-//		back_pls(all);
-	draw(all);
+	run_fractol(all);
 	return (0);
 }

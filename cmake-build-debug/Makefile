@@ -137,125 +137,17 @@ ft/fast:
 .PHONY : ft/fast
 
 #=============================================================================
-# Target rules for targets named complex
+# Target rules for targets named libcomp
 
 # Build rule for target.
-complex: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 complex
-.PHONY : complex
+libcomp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libcomp
+.PHONY : libcomp
 
 # fast build rule for target.
-complex/fast:
-	$(MAKE) -f complex/CMakeFiles/complex.dir/build.make complex/CMakeFiles/complex.dir/build
-.PHONY : complex/fast
-
-complex/src/abs.o: complex/src/abs.c.o
-
-.PHONY : complex/src/abs.o
-
-# target to build an object file
-complex/src/abs.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/complex/src/abs.c.o
-.PHONY : complex/src/abs.c.o
-
-complex/src/abs.i: complex/src/abs.c.i
-
-.PHONY : complex/src/abs.i
-
-# target to preprocess a source file
-complex/src/abs.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/complex/src/abs.c.i
-.PHONY : complex/src/abs.c.i
-
-complex/src/abs.s: complex/src/abs.c.s
-
-.PHONY : complex/src/abs.s
-
-# target to generate assembly for a file
-complex/src/abs.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/complex/src/abs.c.s
-.PHONY : complex/src/abs.c.s
-
-complex/src/cmplx_hard_math.o: complex/src/cmplx_hard_math.c.o
-
-.PHONY : complex/src/cmplx_hard_math.o
-
-# target to build an object file
-complex/src/cmplx_hard_math.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/complex/src/cmplx_hard_math.c.o
-.PHONY : complex/src/cmplx_hard_math.c.o
-
-complex/src/cmplx_hard_math.i: complex/src/cmplx_hard_math.c.i
-
-.PHONY : complex/src/cmplx_hard_math.i
-
-# target to preprocess a source file
-complex/src/cmplx_hard_math.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/complex/src/cmplx_hard_math.c.i
-.PHONY : complex/src/cmplx_hard_math.c.i
-
-complex/src/cmplx_hard_math.s: complex/src/cmplx_hard_math.c.s
-
-.PHONY : complex/src/cmplx_hard_math.s
-
-# target to generate assembly for a file
-complex/src/cmplx_hard_math.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/complex/src/cmplx_hard_math.c.s
-.PHONY : complex/src/cmplx_hard_math.c.s
-
-complex/src/cmplx_simple_operation.o: complex/src/cmplx_simple_operation.c.o
-
-.PHONY : complex/src/cmplx_simple_operation.o
-
-# target to build an object file
-complex/src/cmplx_simple_operation.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/complex/src/cmplx_simple_operation.c.o
-.PHONY : complex/src/cmplx_simple_operation.c.o
-
-complex/src/cmplx_simple_operation.i: complex/src/cmplx_simple_operation.c.i
-
-.PHONY : complex/src/cmplx_simple_operation.i
-
-# target to preprocess a source file
-complex/src/cmplx_simple_operation.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/complex/src/cmplx_simple_operation.c.i
-.PHONY : complex/src/cmplx_simple_operation.c.i
-
-complex/src/cmplx_simple_operation.s: complex/src/cmplx_simple_operation.c.s
-
-.PHONY : complex/src/cmplx_simple_operation.s
-
-# target to generate assembly for a file
-complex/src/cmplx_simple_operation.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/complex/src/cmplx_simple_operation.c.s
-.PHONY : complex/src/cmplx_simple_operation.c.s
-
-complex/src/set_num.o: complex/src/set_num.c.o
-
-.PHONY : complex/src/set_num.o
-
-# target to build an object file
-complex/src/set_num.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/complex/src/set_num.c.o
-.PHONY : complex/src/set_num.c.o
-
-complex/src/set_num.i: complex/src/set_num.c.i
-
-.PHONY : complex/src/set_num.i
-
-# target to preprocess a source file
-complex/src/set_num.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/complex/src/set_num.c.i
-.PHONY : complex/src/set_num.c.i
-
-complex/src/set_num.s: complex/src/set_num.c.s
-
-.PHONY : complex/src/set_num.s
-
-# target to generate assembly for a file
-complex/src/set_num.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/complex/src/set_num.c.s
-.PHONY : complex/src/set_num.c.s
+libcomp/fast:
+	$(MAKE) -f libcomp/CMakeFiles/libcomp.dir/build.make libcomp/CMakeFiles/libcomp.dir/build
+.PHONY : libcomp/fast
 
 src/draw.o: src/draw.c.o
 
@@ -365,60 +257,6 @@ src/fractal_mandelbrot.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/fractal_mandelbrot.c.s
 .PHONY : src/fractal_mandelbrot.c.s
 
-src/fractal_newton.o: src/fractal_newton.c.o
-
-.PHONY : src/fractal_newton.o
-
-# target to build an object file
-src/fractal_newton.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/fractal_newton.c.o
-.PHONY : src/fractal_newton.c.o
-
-src/fractal_newton.i: src/fractal_newton.c.i
-
-.PHONY : src/fractal_newton.i
-
-# target to preprocess a source file
-src/fractal_newton.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/fractal_newton.c.i
-.PHONY : src/fractal_newton.c.i
-
-src/fractal_newton.s: src/fractal_newton.c.s
-
-.PHONY : src/fractal_newton.s
-
-# target to generate assembly for a file
-src/fractal_newton.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/fractal_newton.c.s
-.PHONY : src/fractal_newton.c.s
-
-src/fractol.o: src/fractol.c.o
-
-.PHONY : src/fractol.o
-
-# target to build an object file
-src/fractol.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/fractol.c.o
-.PHONY : src/fractol.c.o
-
-src/fractol.i: src/fractol.c.i
-
-.PHONY : src/fractol.i
-
-# target to preprocess a source file
-src/fractol.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/fractol.c.i
-.PHONY : src/fractol.c.i
-
-src/fractol.s: src/fractol.c.s
-
-.PHONY : src/fractol.s
-
-# target to generate assembly for a file
-src/fractol.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/fractol.c.s
-.PHONY : src/fractol.c.s
-
 src/init.o: src/init.c.o
 
 .PHONY : src/init.o
@@ -445,6 +283,33 @@ src/init.s: src/init.c.s
 src/init.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/init.c.s
 .PHONY : src/init.c.s
+
+src/init_cl.o: src/init_cl.c.o
+
+.PHONY : src/init_cl.o
+
+# target to build an object file
+src/init_cl.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/init_cl.c.o
+.PHONY : src/init_cl.c.o
+
+src/init_cl.i: src/init_cl.c.i
+
+.PHONY : src/init_cl.i
+
+# target to preprocess a source file
+src/init_cl.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/init_cl.c.i
+.PHONY : src/init_cl.c.i
+
+src/init_cl.s: src/init_cl.c.s
+
+.PHONY : src/init_cl.s
+
+# target to generate assembly for a file
+src/init_cl.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/init_cl.c.s
+.PHONY : src/init_cl.c.s
 
 src/key_press.o: src/key_press.c.o
 
@@ -527,6 +392,33 @@ src/mouse.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/mouse.c.s
 .PHONY : src/mouse.c.s
 
+src/resume_cl_init.o: src/resume_cl_init.c.o
+
+.PHONY : src/resume_cl_init.o
+
+# target to build an object file
+src/resume_cl_init.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/resume_cl_init.c.o
+.PHONY : src/resume_cl_init.c.o
+
+src/resume_cl_init.i: src/resume_cl_init.c.i
+
+.PHONY : src/resume_cl_init.i
+
+# target to preprocess a source file
+src/resume_cl_init.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/resume_cl_init.c.i
+.PHONY : src/resume_cl_init.c.i
+
+src/resume_cl_init.s: src/resume_cl_init.c.s
+
+.PHONY : src/resume_cl_init.s
+
+# target to generate assembly for a file
+src/resume_cl_init.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/src/resume_cl_init.c.s
+.PHONY : src/resume_cl_init.c.s
+
 src/struct.o: src/struct.c.o
 
 .PHONY : src/struct.o
@@ -564,19 +456,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... fractol"
 	@echo "... ft"
-	@echo "... complex"
-	@echo "... complex/src/abs.o"
-	@echo "... complex/src/abs.i"
-	@echo "... complex/src/abs.s"
-	@echo "... complex/src/cmplx_hard_math.o"
-	@echo "... complex/src/cmplx_hard_math.i"
-	@echo "... complex/src/cmplx_hard_math.s"
-	@echo "... complex/src/cmplx_simple_operation.o"
-	@echo "... complex/src/cmplx_simple_operation.i"
-	@echo "... complex/src/cmplx_simple_operation.s"
-	@echo "... complex/src/set_num.o"
-	@echo "... complex/src/set_num.i"
-	@echo "... complex/src/set_num.s"
+	@echo "... libcomp"
 	@echo "... src/draw.o"
 	@echo "... src/draw.i"
 	@echo "... src/draw.s"
@@ -589,15 +469,12 @@ help:
 	@echo "... src/fractal_mandelbrot.o"
 	@echo "... src/fractal_mandelbrot.i"
 	@echo "... src/fractal_mandelbrot.s"
-	@echo "... src/fractal_newton.o"
-	@echo "... src/fractal_newton.i"
-	@echo "... src/fractal_newton.s"
-	@echo "... src/fractol.o"
-	@echo "... src/fractol.i"
-	@echo "... src/fractol.s"
 	@echo "... src/init.o"
 	@echo "... src/init.i"
 	@echo "... src/init.s"
+	@echo "... src/init_cl.o"
+	@echo "... src/init_cl.i"
+	@echo "... src/init_cl.s"
 	@echo "... src/key_press.o"
 	@echo "... src/key_press.i"
 	@echo "... src/key_press.s"
@@ -607,6 +484,9 @@ help:
 	@echo "... src/mouse.o"
 	@echo "... src/mouse.i"
 	@echo "... src/mouse.s"
+	@echo "... src/resume_cl_init.o"
+	@echo "... src/resume_cl_init.i"
+	@echo "... src/resume_cl_init.s"
 	@echo "... src/struct.o"
 	@echo "... src/struct.i"
 	@echo "... src/struct.s"

@@ -12,7 +12,7 @@
 
 #include "fractol.h"
 
-t_point	set_dot(int x, int y)
+t_point	set_dot(float x, float y)
 {
 	t_point	dot;
 
@@ -23,7 +23,6 @@ t_point	set_dot(int x, int y)
 
 void	swap_glist(t_point *a, t_point *b)
 {
-	ft_swap(&(a->x), &(b->x));
-	ft_swap(&(a->y), &(b->y));
+	ft_fswap(&(a->x), &(b->x));
+	ft_fswap(&(a->y), &(b->y));
 }
-

@@ -12,17 +12,10 @@
 
 #include "fractol.h"
 
-int		close_window(void *ptr)
+int			close_window(void *ptr)
 {
 	exit(0);
 	ptr = NULL;
-	return (0);
-}
-
-int		key(int key)
-{
-	if (key == kVK_Escape)
-		exit(0);
 	return (0);
 }
 
@@ -52,29 +45,42 @@ void		hook_init(t_all *all)
 {
 	mlx_hook(all->mlx->wp, 17, 0, close_window, all);
 	mlx_hook(all->mlx->wp, 2, 0, key_press, all);
-	mlx_hook(all->mlx->wp, 6, 0L, mouse_hand, all);
-//	mlx_mouse_hook(all->mlx->wp, mouse_hand, all);
-	mlx_key_hook(all->mlx->wp, key, (void *)0);
+	mlx_hook(all->mlx->wp, 6, 0, mouse_hand, all);
+	mlx_hook(all->mlx->wp, 4, 0, mouse_click, all);
 }
 
 int			main(int ac, char **av)
 {
 	t_all	*all;
+	int		pow;
 
-//	errno = 0;
-	if (ac == 2)
+	printf("AAAAA1\n");
+	if (ac == 3)
 	{
+		pow = ft_atoi(av[2]);
+		pow = (pow > 2 && pow <= 50) ? (pow) : (0);
+	}
+	else if (ac == 2)
+		pow = 2;
+	printf("AAAAA2\n");
+	if (ac == 2 || pow)
+	{
+		printf("AAAAA3\n");
 		all = init();
 		all->key = parse_input_str(av);
+		all->pow = (pow >= 2) ? (pow) : (0);
+		printf("AAAAA4\n");
 		hook_init(all);
-		draw(all);
-
+		printf("AAAAA5\n");
+		init_cl(all);
+		printf("AAAAA6\n");
+		run_fractol(all);
+		printf("AAAAA7\n");
 		mlx_loop(all->mlx->mp);
 	}
 	else
-		error_notice("Usage: ./fractol <fractol>\n\tYou can use this fractols:\
-					\n\t1. Mandelbrot\
-					\n\t2. Julia\
-					\n\t3. Burning ship");
+		error_notice("Usage: ./fractol <fractol>\n\tYou can use this\
+		fractols:\n\t1. Mandelbrot\n\t2. Julia\n\t3. Burning ship\
+		you can add power to Mandekbrot and Julia [3 - 10]");
 	return (0);
 }

@@ -15,199 +15,194 @@
 
 /*
 ** ************************************************************************** **
-** Include
+**                                      Include
 ** ************************************************************************** **
 */
 
 # include <math.h>
-# include "../libft/inc/libft.h"
-# include "../complex/complex.h"
+# include "libft.h"
+# include "complex.h"
 # include "keys.h"
 # include <mlx.h>
+# include <OpenCL/opencl.h>
 
 /*
 ** ************************************************************************** **
-** Define
+**                                      Define
 ** ************************************************************************** **
 */
 
 # define LEN 100
-# define WIDE 500
-# define LENGTH 500
+# define WIDE 1000
+# define LENGTH 1000
 
-//# define AQUA 0x00ffff
-//# define BLACK 0x000000
-//# define BLUE 0x0000ff
-//# define FUCHSIA 0xff00ff
-//# define GRAY 0x808080
-//# define GREEN 0x008000
-//# define LIME 0x00ff00
-//# define MAROON 0x800000
-//# define NAVY 0x000080
-//# define OLIVE 0x808000
-//# define PURPLE 0x800080
-//# define RED 0xff0000
-//# define SILVER 0xc0c0c0
-//# define TEAL 0x008080
-//# define WHITE 0xffffff
-//# define YELLOW 0xffff00
+# define AQUA 0x00ffff
+# define BLACK 0x000000
+# define BLUE 0x0000ff
+# define FUCHSIA 0xff00ff
+# define GRAY 0x808080
+# define GREEN 0x008000
+# define LIME 0x00ff00
+# define MAROON 0x800000
+# define NAVY 0x000080
+# define OLIVE 0x808000
+# define PURPLE 0x800080
+# define RED 0xff0000
+# define SILVER 0xc0c0c0
+# define TEAL 0x008080
+# define WHITE 0xffffff
+# define YELLOW 0xffff00
 
-# define MAX_ITER		100
-# define MAX_X			2.0
-# define MIN_X			-2.0
-# define MIN_Y			-2.0
-# define MAX_Y			MIN_Y + (MAX_X - MIN_X) * LENGTH / WIDE
-# define SHIFT_X		(MAX_X - MIN_X) / (WIDE - 1)
-# define SHIFT_Y		(MAX_Y - MIN_Y) / (LENGTH - 1)
-# define S_MANDELBROT	"MANDELBROT"
-# define S_JULIA		"JULIA"
-# define S_BSHP			"BURNING SHIP"
-# define MANDELBROT		1
-# define JULIA			2
-# define BSHP			3
-# define REPEATS		30
+# define MAX_ITER			100
+# define MAX_X				2.0
+# define MIN_X				-2.0
+# define MIN_Y				-2.0
+# define MAX_Y				MIN_Y + (MAX_X - MIN_X) * LENGTH / WIDE
+# define SHIFT_X			(MAX_X - MIN_X) / (WIDE - 1)
+# define SHIFT_Y			(MAX_Y - MIN_Y) / (LENGTH - 1)
+# define S_MANDELBROT		"MANDELBROT"
+# define S_JULIA			"JULIA"
+# define S_BSHP				"BURNING SHIP"
+# define MANDELBROT			1
+# define JULIA				2
+# define BSHP				3
+# define MOUSE_SCROLL_UP	4
+# define MOUSE_SCROLL_DOWN	5
 
 /*
 ** ************************************************************************** **
-** Definition and typedef
+**                              Definition and typedef
 ** ************************************************************************** **
 */
 
 typedef char*		t_string;
 
-typedef struct		s_argb
+typedef struct			s_cl
 {
-	unsigned char	b;
-	unsigned char	g;
-	unsigned char	r;
-	unsigned char	a;
-}					t_argb;
+	char				*file;
+	int					*i_arg;
+	double				*f_arg;
+	cl_mem				cl_data;
+	cl_mem				cl_i_arg;
+	cl_mem				cl_f_arg;
+	cl_platform_id		pid;
+	cl_device_id		d_id;
+	cl_uint				ret_num_platforms;
+	cl_context			cont;
+	cl_command_queue	queue;
+	cl_program			program;
+	cl_kernel			kernel;
+	cl_uint				ret_num_devices;
+}						t_cl;
 
-typedef union		u_color
+typedef struct			s_argb
 {
-	int				hex_color;
-	t_argb			rgb;
-}					t_color;
+	unsigned char		b;
+	unsigned char		g;
+	unsigned char		r;
+	unsigned char		a;
+}						t_argb;
 
-typedef struct		s_point
+typedef union			u_color
 {
-	int			x;
-	int			y;
-	int			z;
-	t_color			hue;
-	t_color			color;
-}					t_point;
+	int					hex_color;
+	t_argb				rgb;
+}						t_color;
 
-enum				e_o{Y, X};
-
-typedef struct		s_mlx
+typedef struct			s_point
 {
-	int				wide;
-	int				length;
-	int				mid[2];
-	void			*mp;
-	void			*wp;
-	void			*img;
-	int				*data;
-	int				bpp;
-	int				line_size;
-	int				endian;
-}					t_mlx;
+	float				x;
+	float				y;
+	float				z;
+	t_color				hue;
+	t_color				color;
+}						t_point;
 
-//
-//typedef struct		s_opt
-//{
-//	short 			rot;
-//	short			slave;
-//	short			bit;
-//	short			grad;
-//	short			color;
-//	short			axis;
-//	t_color			hue;
-//	int				left_right;
-//	int				up_down;
-//}					t_opt;
+enum					e_o{Y, X};
 
-typedef struct		s_fractol
+typedef struct			s_mlx
 {
-	t_mlx			*mlx;
-	int				key;
-	int				iter;
-	int				mouse;
-	int				color;
-	double			speed;
-	double			ud;
-	double			lr;
-	double			minx;
-	double			maxx;
-	double			miny;
-	double			maxy;
-	double			shift_x;
-	double			shift_y;
-	double			zoom;
-	t_point			mouse_pos;
-	t_complex		cmplx;
-}					t_all;
+	int					wide;
+	int					length;
+	int					mid[2];
+	void				*mp;
+	void				*wp;
+	void				*img;
+	int					*data;
+	int					bpp;
+	int					line_size;
+	int					endian;
+}						t_mlx;
 
+typedef struct			s_fractol
+{
+	t_mlx				*mlx;
+	int					key;
+	int					iter;
+	int					color;
+	int					pow;
+	int					mouse;
+	double				speed;
+	double				ud;
+	double				lr;
+	double				minx;
+	double				maxx;
+	double				miny;
+	double				maxy;
+	double				shift_x;
+	double				shift_y;
+	double				zoom;
+	t_point				mouse_pos;
+	t_complex			cmplx;
+	t_cl				*cl;
+}						t_all;
 
 /*
-** ************************************************************************** **
-** Function
-** ************************************************************************** **
+** *****************************************************************************
+**                                   Function                                 **
+** *****************************************************************************
 */
 
+int						brightness(t_color hue, float k);
 
-t_mlx				*window(int w, int l);
+float					perc(float start, float end, float cur);
 
-int					brightness(t_color hue, float k);
+t_point					set_dot(float x, float y);
 
-float				perc(float start, float end, float cur);
+int						mouse_hand(int x, int y, void *param);
 
+int						mouse_click(int button, int x, int y, void *param);
 
-t_point				set_dot(int x, int y);
-//
-//t_point				set_dot_c(float x, float y, int hue);
+int						key_press(int key, void *param);
 
+int						get_color(int max_iter, int iteration);
 
+void					fractol(t_all *win);
 
-/*
-**					events.c
-*/
+void					hook_init(t_all *all);
 
-//void				zoom(int key, t_mlx *win);
-//
-//void				zoom_bits(int key, t_mlx *win);
-//
-//int					key(int key);
-//
-//void				projection(int key, t_mlx *win);
-//
-//void				move(int key, t_mlx *win);
-//
-//void				slave(int key, t_mlx *win);
-//
-//void				coloring(int key, t_mlx *win);
-//
-//void				color(int key, t_mlx *win);
-int mouse_hand(int x, int y, void *param);
+void					draw(t_all *all);
 
-int	key_press(int key, void *param);
+t_all					*init();
 
-int		get_color(int max_iter, int iteration);
+void					mandelbrot(t_all *all);
 
-void				fractol(t_all *win);
+void					julia(t_all *all);
 
-void				hook_init(t_all *all);
+void					burning_ship(t_all *all);
 
-void				draw(t_all *all);
+void					put_pixel(t_all *all, int x, int y, int iteration);
 
-t_all	*init();
-void	mandelbrot(t_all *all);
+void					fill_arg(t_all *all, int *mem, double *dmem);
 
-void		julia(t_all *all);
+void					*create_buf(t_all *all);
 
-void		burning_ship(t_all *all);
+void					*init_cl(t_all *all);
 
-void	put_pixel(t_all *all, int x, int y, int iteration);
+void					*run_fractol(t_all *f);
+
+void					fill_background(int color, t_all *f);
+
+void					*run_fractol(t_all *f);
 
 #endif

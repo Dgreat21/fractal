@@ -228,10 +228,10 @@ CMAKE_STRIP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/Xcode
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-COMPLEX_BINARY_DIR:STATIC=/Users/dgreat/Documents/fractal/cmake-build-debug/complex
+COMPLEX_BINARY_DIR:STATIC=/Users/dgreat/Documents/fractal/cmake-build-debug/libcomp
 
 //Value Computed by CMake
-COMPLEX_SOURCE_DIR:STATIC=/Users/dgreat/Documents/fractal/complex
+COMPLEX_SOURCE_DIR:STATIC=/Users/dgreat/Documents/fractal/libcomp
 
 //Value Computed by CMake
 FRACTOL_BINARY_DIR:STATIC=/Users/dgreat/Documents/fractal/cmake-build-debug
@@ -256,6 +256,12 @@ OPEN_GL:FILEPATH=/System/Library/Frameworks/OpenGl.framework
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//Dependencies for the target
+com_LIB_DEPENDS:STATIC=general;mlx;
+
+//Dependencies for the target
+comp_LIB_DEPENDS:STATIC=general;mlx;
 
 //Dependencies for the target
 complex_LIB_DEPENDS:STATIC=general;mlx;
@@ -283,6 +289,9 @@ li_LIB_DEPENDS:STATIC=general;mlx;
 
 //Value Computed by CMake
 li_SOURCE_DIR:STATIC=/Users/dgreat/Documents/fractal/libft
+
+//Dependencies for the target
+libcomp_LIB_DEPENDS:STATIC=general;mlx;
 
 //Value Computed by CMake
 libft_BINARY_DIR:STATIC=/Users/dgreat/Documents/fractal/cmake-build-debug/libft
@@ -394,7 +403,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -436,7 +445,7 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //COMPLEX: Include Directories
-COMPLEX_INCLUDE_DIRS:INTERNAL=/Users/dgreat/Documents/fractal/complex/includes
+COMPLEX_INCLUDE_DIRS:INTERNAL=../includes
 //LIBFT: Include Directories
 LIBFT_INCLUDE_DIRS:INTERNAL=/Users/dgreat/Documents/fractal/libft/includes
 //ADVANCED property for variable: ProcessorCount_cmd_sysctl

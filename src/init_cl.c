@@ -86,7 +86,7 @@ void			*init_cl(t_all *all)
 	er = clGetDeviceIDs(all->cl->pid, CL_DEVICE_TYPE_GPU, 1, &all->cl->d_id, 0);
 	all->cl->cont = clCreateContext(NULL, 1, &all->cl->d_id, NULL, NULL, &er);
 	all->cl->queue = clCreateCommandQueue(all->cl->cont, all->cl->d_id, 0, &er);
-	kernel_str = read__file("../src/kernel.cl");
+	kernel_str = read__file("./src/kernel.cl");
 	kernel_len = ft_strlen(kernel_str);
 	all->cl->program = clCreateProgramWithSource(all->cl->cont, 1,
 			(const char**)&kernel_str, &kernel_len, &er);

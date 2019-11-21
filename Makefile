@@ -32,11 +32,11 @@ INCLUDES	=	-I$(LIBFT_HEAD) -I$(INC_DIR) -I$(CMPLX_HEAD)
 all: $(NAME)
 
 $(NAME): $(LIBFT) $(CMPLX) $(OBJS)
-	gcc $F -O2 $(OBJS) $(INCLUDES) $(LIBFT) $(LIBCOMP) $(LIBCL) $(LIBMLX) -o $(NAME)
+	gcc $(OBJS) $(INCLUDES) $(LIBFT) $(LIBCOMP) $(LIBCL) $(LIBMLX) -o $(NAME)
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c $(INC_DIR)
 	@mkdir -p $(OBJ_DIR)
-	gcc -c -O2 $F $< $(INCLUDES) -o $@
+	gcc -c $(INCLUDES) -o $@ -c $<
 
 $(LIBFT):
 	@make -C $(LIBFT_DIR)

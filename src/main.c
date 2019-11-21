@@ -54,7 +54,6 @@ int			main(int ac, char **av)
 	t_all	*all;
 	int		pow;
 
-	printf("AAAAA1\n");
 	if (ac == 3)
 	{
 		pow = ft_atoi(av[2]);
@@ -62,20 +61,14 @@ int			main(int ac, char **av)
 	}
 	else if (ac == 2)
 		pow = 2;
-	printf("AAAAA2\n");
 	if (ac == 2 || pow)
 	{
-		printf("AAAAA3\n");
 		all = init();
 		all->key = parse_input_str(av);
 		all->pow = (pow >= 2) ? (pow) : (0);
-		printf("AAAAA4\n");
 		hook_init(all);
-		printf("AAAAA5\n");
 		init_cl(all);
-		printf("AAAAA6\n");
 		run_fractol(all);
-		printf("AAAAA7\n");
 		mlx_loop(all->mlx->mp);
 	}
 	else

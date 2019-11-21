@@ -1,9 +1,0 @@
-/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/dgreat/Documents/fractal/cmake-build-debug/CMakeFiles/fractol.dir
-/Users/dgreat/Documents/fractal/cmake-build-debug/libft/CMakeFiles/rebuild_cache.dir
-/Users/dgreat/Documents/fractal/cmake-build-debug/libft/CMakeFiles/edit_cache.dir
-/Users/dgreat/Documents/fractal/cmake-build-debug/libft/CMakeFiles/ft.dir
-/Users/dgreat/Documents/fractal/cmake-build-debug/libcomp/CMakeFiles/rebuild_cache.dir
-/Users/dgreat/Documents/fractal/cmake-build-debug/libcomp/CMakeFiles/edit_cache.dir
-/Users/dgreat/Documents/fractal/cmake-build-debug/libcomp/CMakeFiles/libcomp.dir

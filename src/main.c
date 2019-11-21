@@ -6,7 +6,7 @@
 /*   By: dgreat <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/11 03:07:21 by dgreat            #+#    #+#             */
-/*   Updated: 2019/11/18 17:19:04 by dgreat           ###   ########.fr       */
+/*   Updated: 2019/11/21 04:24:42 by dgreat           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ int			main(int ac, char **av)
 	}
 	else if (ac == 2)
 		pow = 2;
-	if (ac == 2 || pow)
+	if ((ac == 2 || pow) && parse_input_str(av))
 	{
 		all = init();
 		all->key = parse_input_str(av);

@@ -2,6 +2,7 @@
 // by ol
 
 #include <OpenGL/OpenGL.h>
+#include <OpenGL/gl3.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <sys/mman.h>

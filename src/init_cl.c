@@ -40,7 +40,7 @@ static void		*error_cl(int error_code, char *str)
 	return (NULL);
 }
 
-void			fill_arg(t_all *all, int *mem, double *dmem)
+void			fill_arg(t_all *all, int *mem, cl_float *dmem)
 {
 	mem[0] = LENGTH;
 	mem[1] = WIDE;
@@ -76,6 +76,17 @@ char			*read__file(char *path)
 	return (buff);
 }
 
+static void		print_build_log(t_all *all)
+{
+	char		log[10000];
+
+	clGetProgramBuildInfo(all->cl->program, all->cl->d_id,
+			CL_PROGRAM_BUILD_LOG, sizeof(log), log, NULL);
+	ft_putendl("\033[31mError in clBuildProgram\033[0m");
+	ft_putendl(log);
+	exit(1);
+}
+
 void			*init_cl(t_all *all)
 {
 	int			er;
@@ -91,13 +102,15 @@ void			*init_cl(t_all *all)
 	all->cl->program = clCreateProgramWithSource(all->cl->cont, 1,
 			(const char**)&kernel_str, &kernel_len, &er);
 	er = clBuildProgram(all->cl->program, 1, &all->cl->d_id, NULL, NULL, NULL);
+	if (er != CL_SUCCESS)
+		print_build_log(all);
 	all->cl->kernel = clCreateKernel(all->cl->program, "fractol", &er);
 	all->cl->cl_i_arg = clCreateBuffer(all->cl->cont, CL_MEM_READ_WRITE,
 			sizeof(int) * 32, NULL, &er);
 	all->cl->cl_data = clCreateBuffer(all->cl->cont, CL_MEM_READ_WRITE,
 									sizeof(int) * WIDE * LENGTH, NULL, &er);
 	all->cl->cl_f_arg = clCreateBuffer(all->cl->cont, CL_MEM_READ_WRITE,
-										sizeof(double) * 32, NULL, &er);
+										sizeof(cl_float) * 32, NULL, &er);
 	er = clSetKernelArg(all->cl->kernel, 0, sizeof(cl_mem), &all->cl->cl_data);
 	er = clSetKernelArg(all->cl->kernel, 1, sizeof(cl_mem), &all->cl->cl_i_arg);
 	er = clSetKernelArg(all->cl->kernel, 2, sizeof(cl_mem), &all->cl->cl_f_arg);

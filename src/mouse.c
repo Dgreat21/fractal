@@ -12,8 +12,28 @@
 
 #include "fractol.h"
 
+/*
+** Shift the view so the point under the cursor stays in place.
+** Burning ship is drawn flipped vertically, so its ud goes the other way.
+*/
+
+void	zoom_to_cursor(t_point pos, t_all *all, double old_zoom)
+{
+	double	dz;
+
+	dz = all->zoom - old_zoom;
+	all->lr -= dz * (pos.x / WIDE - 0.5);
+	if (all->key == BSHP)
+		all->ud -= dz * ((LENGTH - pos.y) / LENGTH - 0.5);
+	else
+		all->ud += dz * ((LENGTH - pos.y) / LENGTH - 0.5);
+}
+
 void	mouse_zoom(int button, t_point pos, t_all *all)
 {
+	double	old_zoom;
+
+	old_zoom = all->zoom;
 	if (button == MOUSE_SCROLL_UP)
 	{
 		all->minx *= 0.95;
@@ -30,6 +50,7 @@ void	mouse_zoom(int button, t_point pos, t_all *all)
 		all->iter -= 2;
 		all->zoom *= 1.1;
 	}
+	zoom_to_cursor(pos, all, old_zoom);
 	all->maxy = all->miny + (all->maxx - all->minx) * WIDE / LENGTH;
 	all->shift_x = (all->maxx - all->minx) / (WIDE - 1);
 	all->shift_y = (all->maxy - all->miny) / (LENGTH - 1);

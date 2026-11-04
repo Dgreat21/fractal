@@ -41,13 +41,13 @@ void	change_iteration(t_all *all, int key)
 void	arrow_control(t_all *all, int key)
 {
 	if (key == kVK_LeftArrow)
-		all->lr += all->speed;
+		all->lr += all->speed * all->zoom;
 	else if (key == kVK_RightArrow)
-		all->lr -= all->speed;
+		all->lr -= all->speed * all->zoom;
 	else if (key == kVK_DownArrow)
-		all->ud -= all->speed;
+		all->ud -= all->speed * all->zoom;
 	else if (key == kVK_UpArrow)
-		all->ud += all->speed;
+		all->ud += all->speed * all->zoom;
 }
 
 void	zoom(t_all *all, int key)
@@ -59,7 +59,6 @@ void	zoom(t_all *all, int key)
 		all->miny *= 0.95;
 		all->iter += 1;
 		all->zoom /= 1.1;
-		all->speed /= all->zoom * 8;
 	}
 	if (key == kVK_ANSI_KeypadMinus)
 	{
@@ -68,7 +67,6 @@ void	zoom(t_all *all, int key)
 		all->miny *= 1.1;
 		all->iter -= 1;
 		all->zoom *= 1.1;
-		all->speed *= all->zoom / 8;
 	}
 }
 
@@ -88,9 +86,9 @@ int		key_press(int key, void *param)
 	else if (key == kVK_ANSI_D)
 		default_(all);
 	else if (key == kVK_ANSI_KeypadPlus || key == kVK_ANSI_KeypadMinus)
-		change_iteration(all, key);
-	else if (key == kVK_ANSI_Minus || key == kVK_ANSI_Equal)
 		zoom(all, key);
+	else if (key == kVK_ANSI_Minus || key == kVK_ANSI_Equal)
+		change_iteration(all, key);
 	else if (key >= kVK_LeftArrow && key <= kVK_UpArrow)
 		arrow_control(all, key);
 	run_fractol(all);

@@ -13,6 +13,8 @@ SRC			= abs.c\
 
 OBJS	=	$(addprefix $(OBJ_DIR)/,$(SRC:%.c=%.o))
 
+all: $(NAME)
+
 $(NAME): $(OBJ_DIR) $(OBJS) $(HEAD)
 	@ar rc $(NAME) $(OBJS)
 	@ranlib $(NAME)

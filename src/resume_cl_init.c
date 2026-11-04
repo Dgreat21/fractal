@@ -32,7 +32,7 @@ void				*run_fractol(t_all *f)
 	size_t		kernel_num;
 	int			ret;
 	int			mem[32];
-	double		dmem[32];
+	cl_float	dmem[32];
 
 	mlx_clear_window(f->mlx->mp, f->mlx->wp);
 	fill_background(0, f);
@@ -41,7 +41,7 @@ void				*run_fractol(t_all *f)
 	ret = clEnqueueWriteBuffer(f->cl->queue, f->cl->cl_i_arg, CL_TRUE, 0,
 			sizeof(int) * 32, mem, 0, NULL, NULL);
 	ret = clEnqueueWriteBuffer(f->cl->queue, f->cl->cl_f_arg, CL_TRUE, 0,
-			sizeof(double) * 32, dmem, 0, NULL, NULL);
+			sizeof(cl_float) * 32, dmem, 0, NULL, NULL);
 	ret = clEnqueueNDRangeKernel(f->cl->queue, f->cl->kernel, 1, NULL,
 			&kernel_num, NULL, 0, NULL, NULL);
 	ret = clEnqueueReadBuffer(f->cl->queue, f->cl->cl_data, CL_TRUE, 0,

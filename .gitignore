@@ -3,3 +3,8 @@
 /src2/fractol.h
 
 .DS_Store
+
+/fractol
+/obj/
+*.a
+*.o

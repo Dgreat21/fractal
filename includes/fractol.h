@@ -33,8 +33,8 @@
 */
 
 # define LEN 100
-# define WIDE 1000
-# define LENGTH 1000
+# define WIDE 800
+# define LENGTH 800
 
 # define AQUA 0x00ffff
 # define BLACK 0x000000
@@ -81,7 +81,7 @@ typedef struct			s_cl
 {
 	char				*file;
 	int					*i_arg;
-	double				*f_arg;
+	cl_float			*f_arg;
 	cl_mem				cl_data;
 	cl_mem				cl_i_arg;
 	cl_mem				cl_f_arg;
@@ -193,7 +193,7 @@ void					burning_ship(t_all *all);
 
 void					put_pixel(t_all *all, int x, int y, int iteration);
 
-void					fill_arg(t_all *all, int *mem, double *dmem);
+void					fill_arg(t_all *all, int *mem, cl_float *dmem);
 
 void					*create_buf(t_all *all);
 

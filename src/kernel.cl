@@ -16,8 +16,8 @@
 
 typedef struct		s_complex
 {
-	double			re;
-	double			im;
+	float			re;
+	float			im;
 }					t_complex;
 
 typedef struct		s_argb
@@ -44,15 +44,15 @@ typedef struct		s_fractol
 	int				pow;
 	int				mouse;
 
-	double			maxy;
-	double			minx;
-	double			lr;
-	double			ud;
-	double			shift_y;
-	double			shift_x;
-	double			mouse_pos_x;
-	double			mouse_pos_y;
-	double			zoom;
+	float			maxy;
+	float			minx;
+	float			lr;
+	float			ud;
+	float			shift_y;
+	float			shift_x;
+	float			mouse_pos_x;
+	float			mouse_pos_y;
+	float			zoom;
 }					t_all;
 
 
@@ -65,11 +65,11 @@ t_complex		cmplx_plus(t_complex a, t_complex b)
 	return (c);
 }
 
-double			cmplx_abs_num(t_complex x)
+float			cmplx_abs_num(t_complex x)
 {
-	double		a = x.re;
-	double		b = x.im;
-	double		z;
+	float		a = x.re;
+	float		b = x.im;
+	float		z;
 
 	z = sqrt(a * a + b * b);
 	return (z);
@@ -117,7 +117,7 @@ t_complex		cmplx_sqr_abs(t_complex a)
 int				color(int i, int color_key, int fractol, int repeats)
 {
 	int n = i;
-	double t = (double)i / (double)repeats;
+	float t = (float)i / (float)repeats;
 	int s = 100;
 
 	if (color_key == 0)
@@ -147,9 +147,9 @@ int				color(int i, int color_key, int fractol, int repeats)
 int			__get_color(int max_iter, int iteration)
 {
 	t_color		color;
-	double		t;
+	float		t;
 
-	t = (double)iteration / max_iter;
+	t = (float)iteration / max_iter;
 	color.rgb.r = (unsigned char)(9 * (1 - t) * pow(t, 3) * 255);
 	color.rgb.g = (unsigned char)(15 * pow((1 - t), 2) * pow(t, 2) * 255);
 	color.rgb.b = (unsigned char)(8.5 * pow((1 - t), 3) * t * 255);
@@ -235,7 +235,7 @@ void			__choose_fractal(t_all *all, int x, int y, __global int *data)
 
 __kernel void	fractol(__global int	*data,
 						__global int	*i_arg,
-						__global double	*f_arg)
+						__global float	*f_arg)
 {
 	t_all	all;
 	int		g_id;
@@ -243,9 +243,6 @@ __kernel void	fractol(__global int	*data,
 	int		y;
 
 	g_id = get_global_id(0);
-
-	x = g_id % 1000;
-	y = g_id / 1000;
 
 	all.length = i_arg[0];
 	all.wide = i_arg[1];
@@ -264,6 +261,8 @@ __kernel void	fractol(__global int	*data,
 	all.mouse_pos_x = f_arg[6];
 	all.mouse_pos_y = f_arg[7];
 	all.zoom = f_arg[8];
+	x = g_id % all.wide;
+	y = g_id / all.wide;
 	__choose_fractal(&all, x, y, data);
 }
 
